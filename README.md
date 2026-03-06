@@ -1,9 +1,9 @@
 # SynTiSeD -- Synthetic Energy Datasets and NILM Experiments
 
-This repository contains the datasets and experiment results accompanying the doctoral thesis:
+<!-- This repository contains the datasets and experiment results accompanying the doctoral thesis:
 
 > **Towards Realistic Synthetic Energy Datasets: Bridging the Gap between Simulation and Reality in Power Systems**
-> by Michael Meiser, Saarland Informatics Campus, 2026
+> by Michael Meiser, Saarland Informatics Campus, 2026 -->
 
 ## Overview
 
@@ -110,6 +110,18 @@ If you use these datasets in your research, please cite:
   type      = {Doctoral Thesis}
 }
 ``` -->
+
+```bibtex
+@article{meiser2024generation,
+  title={Generation of meaningful synthetic sensor data—Evaluated with a reliable transferability methodology},
+  author={Meiser, Michael and Duppe, Benjamin and Zinnikus, Ingo},
+  journal={Energy and AI},
+  volume={15},
+  pages={100308},
+  year={2024},
+  publisher={Elsevier}
+}
+```
 
 ## License
 
