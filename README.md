@@ -7,7 +7,7 @@
 
 ## Overview
 
-This repository provides synthetic and real energy datasets generated and evaluated using the **SynTiSeD** (Synthetic Time Series Data Generator) framework (https://github.com/mmeism/SynTiSeD_research). The datasets are designed for training and evaluating **Non-Intrusive Load Monitoring (NILM)** models and are stored in HDF5 format, compatible with [NILMTK](https://github.com/nilmtk/nilmtk-contrib).
+This repository provides synthetic and real energy datasets generated and evaluated using the [SynTiSeD](https://github.com/mmeism/SynTiSeD_research) (Synthetic Time Series Data Generator) framework. The datasets are designed for training and evaluating **Non-Intrusive Load Monitoring (NILM)** models and are stored in HDF5 format, compatible with [NILMTK](https://github.com/nilmtk/nilmtk-contrib).
 
 The research demonstrates that NILM models trained on synthetic data can match or outperform models trained on real data in terms of transferability, and introduces the concept of **Unassigned Power Consumption (UPC)** as a critical component for generating realistic synthetic energy data.
 
