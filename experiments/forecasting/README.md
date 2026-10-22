@@ -20,7 +20,7 @@ This folder contains the results of the **load-forecasting** evaluation — a se
 Across both models and both error measures, training on the synthetic datasets performs **comparably** to training on real data (relative differences of a few percent; confidence intervals include zero), with a model-dependent spread in both directions:
 
 - **DLinear:** all datasets comparable to real.
-- **N-BEATS** (more discriminating): `mUPC`, `rUPC`, `augmented`, `r+r` and `ndUPC` comparable (some nominally better); the degraded no UPC baseline (`noUPC`) and `SPCP` are worse than real.
+- ***N-BEATS** (more discriminating): `mUPC`, `rUPC`, `noSPCP`, `augmented`, `r+r` and `ndUPC` comparable (some nominally better); the degraded no UPC baseline (`noUPC`) is worse than real, and `SPCP` is worse than real on MASE (on RMSSE, its confidence interval includes zero).
 - For individual models (notably WindowGRU on the washing-machine aggregate in NILM, and ndUPC in forecasting) synthetic training is slightly better than real.
 
 The forecasting result therefore extends the viability of the synthetic data beyond NILM to a second, structurally different downstream task.
