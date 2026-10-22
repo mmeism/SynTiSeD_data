@@ -42,7 +42,7 @@ Across both tasks, models trained on the realistic synthetic datasets achieve tr
 - Format: HDF5 (NILMTK-compatible)
 - Resolution: 1 Hz sampling
 - Content: Aggregated household consumption plus appliance-level ground truth
-- Scale: Multiple households with 14 days per household
+- Scale: Multiple households with 14 days per household (28 days for augmented and r+r)“
 - Large data files (`*.h5.gz`) are tracked with Git LFS.
 
 ## Real Data Source
