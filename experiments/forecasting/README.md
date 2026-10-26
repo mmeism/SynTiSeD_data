@@ -1,6 +1,7 @@
 # Load-Forecasting Transferability Evaluation
 
-This folder contains the results of the **load-forecasting** evaluation — a second, complementary downstream task to NILM. While NILM probes the structural and local accuracy of the synthetic data, forecasting probes long-range properties such as daily seasonality. The experiment uses the **same datasets** as the rest of this repository (`real`, `noUPC`, `ndUPC`, `mUPC`, `rUPC`, `noSPCP`, `SPCP`, `augmented`, `r+r`, `test`).
+This folder contains the results of the **load-forecasting** evaluation — a second, complementary downstream task to NILM. While NILM probes the structural and local accuracy of the synthetic data, forecasting probes long-range properties such as daily seasonality. 
+The experiment uses the following datasets of this repository (`real`, `noUPC`, `ndUPC`, `mUPC`, `rUPC`, `noSPCP`, `SPCP`, `augmented`, `r+r`, `test`).
 
 ## Setup
 
@@ -17,7 +18,7 @@ This folder contains the results of the **load-forecasting** evaluation — a se
 
 ## Results (summary)
 
-Across both models and both error measures, training on the synthetic datasets performs **comparably** to training on real data (relative differences of a few percent; confidence intervals include zero), with a model-dependent spread in both directions:
+Across both models and both error measures, training on the synthetic datasets performs **comparably** to training on real data (relative differences of a few percent; confidence intervals mostly include zero), with a model-dependent spread in both directions:
 
 - **DLinear:** all datasets comparable to real; the only exception is `augmented`, which is marginally but clearly better on RMSSE (+0.8 %).
 - **N-BEATS** (more discriminating): `mUPC`, `rUPC`, `noSPCP`, `augmented`, `r+r` and `ndUPC` comparable (some nominally better); the degraded no UPC baseline (`noUPC`) is worse than real, and `SPCP` is worse than real on MASE (on RMSSE, its confidence interval includes zero).
