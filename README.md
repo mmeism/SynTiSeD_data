@@ -6,7 +6,7 @@ This repository provides synthetic and real energy datasets for energy-domain ma
 ## Key Datasets
 The repository organizes datasets across two research chapters:
 
-**Chapter 4** examines Unassigned Power Consumption (UPC) impact through variants: real data, noUPC, ndUPC, mUPC, and rUPC configurations, plus three further simulation runs of the mUPC configuration (mUPC_run2, mUPC_run4, mUPC_run5).
+**Chapter 4** examines Unassigned Power Consumption (UPC) impact through variants: real data, noUPC, ndUPC, mUPC, and rUPC configurations, plus three further simulation runs of the mUPC configuration (mUPC_run2, mUPC_run4, mUPC_run5) and two control datasets with filtered UPC (fUPCk, fUPCs; kettle only, see `experiments/nilm/README.md`).
 
 **Chapter 5** evaluates Virtual Appliances generating synthetic patterns across noSPCP, SPCP, augmented, and r+r
 datasets, plus a held-out test set.
@@ -23,7 +23,8 @@ Both tasks use the same transfer protocol: train a model on a given dataset, the
 ```
 SynTiSeD_data/
 ├── datasets/                 # one folder per dataset variant (data + visualization)
-│   ├── real/  noUPC/  ndUPC/  mUPC/  mUPC_run2/  mUPC_run4/  mUPC_run5/  rUPC/  noSPCP/  SPCP/  augmented/  r+r/  test/
+│   ├── real/  noUPC/  ndUPC/  mUPC/  mUPC_run2/  mUPC_run4/  mUPC_run5/  rUPC/  fUPCk/  fUPCs/
+│   │   noSPCP/  SPCP/  augmented/  r+r/  test/
 │   │     └── <ds>_dataset.h5.gz,  <ds>_plot.png
 └── experiments/
     ├── nilm/                 # NILM results + README
@@ -32,7 +33,7 @@ SynTiSeD_data/
           └── forecasting_DLinear.xlsx,  forecasting_NBEATS.xlsx
 ```
 
-`<ds>` ∈ {real, noUPC, ndUPC, mUPC, mUPC_run2, mUPC_run4, mUPC_run5, rUPC, noSPCP, SPCP, augmented, r+r, test}.
+`<ds>` ∈ {real, noUPC, ndUPC, mUPC, mUPC_run2, mUPC_run4, mUPC_run5, rUPC, fUPCk, fUPCs, noSPCP, SPCP, augmented, r+r, test} (fUPCk, fUPCs: kettle results only).
 
 ## Main Claims About Model Performance
 Across both tasks, models trained on the realistic synthetic datasets achieve transferability **comparable to and in some configurations slightly better than** models trained on real data, evaluated with effect sizes and confidence intervals at the household level. 
